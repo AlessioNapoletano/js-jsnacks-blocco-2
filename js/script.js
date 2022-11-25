@@ -12,10 +12,10 @@ for (let i = 0; i < 6; i++) {
 
     if (inputNumber % 2 != 0){
         numbers[i] = inputNumber;
-        console.log(numbers[i]);
-    } else{
-        console.log("il numero è pari");
-    }
+    } 
+
+    
 
         
 }
+console.log(numbers)
