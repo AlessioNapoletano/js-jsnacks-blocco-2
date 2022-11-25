@@ -8,10 +8,10 @@ const result = document.getElementById("output");
 button.addEventListener("click", function () {
     const numberInput = document.getElementById("numbers");
     let number = parseInt(numberInput.value);
-    if(number%2==0){
+    if (number % 2 == 0) {
         console.log(number);
         result.innerHTML = number;
-    } else{
+    } else {
         number++;
         console.log(number)
         result.innerHTML = number;
