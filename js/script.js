@@ -17,6 +17,6 @@ for (let i = 0; i < 6; i++) {
         const newLiElement = document.createElement("li");
         newLiElement.innerHTML += "il numero inserito nell'array è: " + numbers[i];
         UlElement.append(newLiElement);
-    } 
+    }  
 }
 console.log(numbers)
