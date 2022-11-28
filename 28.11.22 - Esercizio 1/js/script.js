@@ -11,10 +11,3 @@ do {
     console.log(result);
 } while (result <= 1000);
 
-
-
-/*
-for (let i = 0; i <= 1000; i++) {
-    result = number ** i;
-    console.log(result);
-}*/
