@@ -2,6 +2,7 @@
 
 const numbers = [10, 22, 33, 44, 55, 60, 70, 80, 90];
 const ulElement = document.querySelector("ul.list-group");
+const sumOutput = document.getElementById("sum");
 let sum = 0;
 
 for (let i = 0; i < numbers.length; i++) {
@@ -17,3 +18,4 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log("somma di tutti i numeri nelle posizione dispari dell'array: " + sum);
+sumOutput.innerHTML = "la somma dei precedenti numeri è = " + sum;
