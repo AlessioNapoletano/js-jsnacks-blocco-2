@@ -6,19 +6,33 @@
  */
 
 const names = ['Michela', 'Giuseppina', 'Taylor', 'Donna', 'Marsha', 'Fabio', 'Roberto'];
-const lastnames = ['Cappelletti', 'Jager', 'Porcinelli', 'Buffetti', 'Forghieri', 'Papagni', 'Marazzini'];
+const lastNames = ['Cappelletti', 'Jager', 'Porcinelli', 'Buffetti', 'Forghieri', 'Papagni', 'Marazzini'];
 
-const ulElement = document.getElementById("output");
+const guests = [];
 
-let person = [];
+/*
+for (let i = 0; i < Math.ceil(Math.random() * 15) + 4; i++){
+    let randomNamesIndex = Math.floor(Math.random() * (names.length));
+    let randomLastNamesIndex = Math.floor(Math.random() * (lastNames.length));
+    
+    const guest = names[randomNamesIndex] + " " + lastNames[randomLastNamesIndex];
 
-for (let i = 0; i < names.length; i++) {
-    person[i] = names[i] + " " + lastnames[i];
-    console.log(person[i]);
-    const newLiElement = document.createElement("li");
-    newLiElement.innerHTML = person[i];
-    ulElement.append(newLiElement);
+    guests.push(guest);
+    
 }
+console.log(guests);
+*/
 
-//Stampa tutto l'array
-console.log(person);
+while (guests.length < 15){
+    let randomNamesIndex = Math.floor(Math.random() * (names.length));
+    let randomLastNamesIndex = Math.floor(Math.random() * (lastNames.length));
+    
+    const guest = names[randomNamesIndex] + " " + lastNames[randomLastNamesIndex];
+
+    if (guests.indexOf(guest) === -1){
+        guests.push(guest);
+    }
+    
+
+}
+console.log(guests);
