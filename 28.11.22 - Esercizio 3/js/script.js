@@ -9,7 +9,7 @@ for (let i = 0; i < numbers.length; i++) {
     if (i % 2 != 0) {
         const newLiElement = document.createElement("li");
         newLiElement.classList.add("list-group-item");
-        newLiElement.innerHTML = "Numero in posizione dispari: " + numbers[i];
+        newLiElement.append("Numero in posizione dispari: " + numbers[i])
         ulElement.append(newLiElement);
         console.log("Questo numero è in una posizione dispari, verrà sommatto: " + numbers[i]);    
         sum = sum + numbers[i];
