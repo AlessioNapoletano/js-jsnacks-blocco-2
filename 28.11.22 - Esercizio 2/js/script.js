@@ -12,6 +12,8 @@ const lastnames = ['Cappelletti', 'Jager', 'Porcinelli', 'Buffetti', 'Forghieri'
 let person = [];
 
 for (let i = 0; i < names.length; i++) {
-    person = names[i] + " " + lastnames[i];
-    console.log(person);
+    person[i] = names[i] + " " + lastnames[i];
+    console.log(person[i]);
 }
+
+console.log(person);
