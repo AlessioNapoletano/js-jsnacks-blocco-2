@@ -10,7 +10,6 @@ const lastnames = ['Cappelletti', 'Jager', 'Porcinelli', 'Buffetti', 'Forghieri'
 
 const ulElement = document.getElementById("output");
 
-
 let person = [];
 
 for (let i = 0; i < names.length; i++) {
@@ -21,4 +20,5 @@ for (let i = 0; i < names.length; i++) {
     ulElement.append(newLiElement);
 }
 
+//Stampa tutto l'array
 console.log(person);
